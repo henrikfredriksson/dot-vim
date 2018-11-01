@@ -9,6 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'itchyny/lightline.vim.git'
 Plugin 'tell-k/vim-autopep8.git'
 Plugin 'vim-syntastic/syntastic.git'
@@ -31,6 +32,11 @@ filetype plugin indent on    " required
 :imap <C-g> <Esc>
 set shortmess=I
 set laststatus=2
+
+" ctrlp
+let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+let g:ctrlp_use_caching = 0
+
 
 " autopep8
 let g:autopep8_aggressive=2
