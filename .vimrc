@@ -13,7 +13,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'itchyny/lightline.vim.git'
 Plugin 'tell-k/vim-autopep8.git'
 Plugin 'vim-syntastic/syntastic.git'
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -29,10 +28,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 :syntax on
+set background=dark
 :imap <C-g> <Esc>
-set shortmess=I
-set laststatus=2
 
+
+
+set shortmess=I
+
+set laststatus=2
 " ctrlp
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
